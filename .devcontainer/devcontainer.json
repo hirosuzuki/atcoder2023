@@ -1,0 +1,33 @@
+{
+    "name": "python3.8",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "remoteUser": "dev",
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash"
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "python.linting.flake8Args": [
+            "--ignore=E111, E114, E402, E501 --max-line-length 120"
+        ],
+        "python.formatting.blackArgs": [
+            "--line-length=120"
+        ],
+        "python.analysis.typeCheckingMode": "strict",
+        "[python]": {
+            "editor.formatOnSave": true,
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        }
+    }
+}
