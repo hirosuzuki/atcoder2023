@@ -4,9 +4,10 @@ from typing import List, Tuple
 
 K = int(input())
 
+
 def solve(K: int):
     M = 10**6
-    
+
     cs: List[bool] = [True] * (M + 1)
     ss: List[int] = []
     i = 2
@@ -39,7 +40,7 @@ def solve(K: int):
                 m //= r
                 k += 1
 
-        #print("calc", r, n, i, k)
+        # print("calc", r, n, i, k)
 
         return r * i
 

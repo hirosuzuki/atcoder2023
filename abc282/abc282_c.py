@@ -1,12 +1,15 @@
 # https://atcoder.jp/contests/abc282/tasks/abc282_c
 
+from typing import List
+
 N = int(input())
 S = input()
 
+
 def solve(N: int, S: str):
-    result = []
+    result: List[str] = []
     bc = 0
-    for i, c in enumerate(S):
+    for _, c in enumerate(S):
         if c == '"':
             bc += 1
         if c == "," and bc % 2 == 0:
@@ -17,4 +20,3 @@ def solve(N: int, S: str):
 
 
 solve(N, S)
-

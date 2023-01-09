@@ -5,7 +5,8 @@ from typing import List
 N = int(input())
 S = [int(x) for x in input().split()]
 
-def solve(N: int, S: List[str]):
+
+def solve(N: int, S: List[int]):
     result: List[int] = []
     p = 0
     for s in S:
@@ -13,5 +14,5 @@ def solve(N: int, S: List[str]):
         p = s
     print(*result)
 
-solve(N, S)
 
+solve(N, S)

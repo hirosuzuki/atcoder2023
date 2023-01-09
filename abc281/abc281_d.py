@@ -5,6 +5,7 @@ from typing import List
 N, K, D = [int(x) for x in input().split()]
 A = [int(x) for x in input().split()]
 
+
 def solve(N: int, K: int, D: int, A: List[int]):
     # dp[N][K][D]
 
@@ -23,5 +24,6 @@ def solve(N: int, K: int, D: int, A: List[int]):
 
     result = dp[N][K][0]
     print(result)
+
 
 solve(N, K, D, A)

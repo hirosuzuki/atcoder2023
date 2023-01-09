@@ -2,8 +2,10 @@
 
 A, B = [int(x) for x in input().split()]
 
+
 def solve(A: int, B: int):
-    result = A ** B
+    result = A**B
     print(result)
+
 
 solve(A, B)

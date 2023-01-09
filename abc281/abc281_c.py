@@ -5,6 +5,7 @@ from typing import List
 N, T = [int(x) for x in input().split()]
 A = [int(x) for x in input().split()]
 
+
 def solve(N: int, T: int, A: List[int]):
     ts = sum(A)
     t = T % ts
@@ -13,5 +14,6 @@ def solve(N: int, T: int, A: List[int]):
             print(i + 1, t)
             return
         t -= a
+
 
 solve(N, T, A)

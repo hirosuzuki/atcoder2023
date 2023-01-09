@@ -2,15 +2,17 @@
 
 S = input()
 
-def solve(S: str):
+
+def solve(s: str):
     result = 0
-    while S:
-        if S[0:2] == "00":
-            S = S[2:]
+    while s:
+        if s[0:2] == "00":
+            s = s[2:]
             result += 1
         else:
-            S = S[1:]
+            s = s[1:]
             result += 1
     print(result)
+
 
 solve(S)

@@ -1,15 +1,15 @@
 # https://atcoder.jp/contests/abc283/tasks/abc283_d
 
-from typing import Set
+from typing import List, Set
 
 S = input()
 
-def solve(S: str):
 
+def solve(s: str):
     def check(S: str) -> bool:
         css: List[Set[str]] = [set()]
-        tcs: Set(str) = set()
-        for i, c in enumerate(S):
+        tcs: Set[str] = set()
+        for _, c in enumerate(S):
             if c == "(":
                 css.append(set())
             elif c == ")":
@@ -21,9 +21,10 @@ def solve(S: str):
                 css[-1].add(c)
         return True
 
-    if check(S):
+    if check(s):
         print("Yes")
     else:
         print("No")
+
 
 solve(S)

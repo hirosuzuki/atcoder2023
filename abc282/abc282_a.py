@@ -2,8 +2,10 @@
 
 N = int(input())
 
+
 def solve(N: int):
     cs = [chr(ord("A") + x) for x in range(N)]
     print(*cs, sep="")
+
 
 solve(N)
