@@ -2,6 +2,7 @@
     "name": "python3.8",
     "dockerFile": "Dockerfile",
     "extensions": [
+        "mhutchie.git-graph",
         "ms-azuretools.vscode-docker",
         "ms-python.python",
         "ms-python.vscode-pylance"
