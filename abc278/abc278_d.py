@@ -1,7 +1,7 @@
 # https://atcoder.jp/contests/abc278/tasks/abc278_d
 
 from collections import defaultdict
-from typing import DefaultDict, List, Set
+from typing import DefaultDict, List
 
 N = int(input())
 A = [int(x) for x in input().split()]
