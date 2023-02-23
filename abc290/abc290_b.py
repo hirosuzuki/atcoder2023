@@ -1,4 +1,4 @@
-# https://atcoder.jp/contests/abc290/tasks/abc290_a
+# https://atcoder.jp/contests/abc290/tasks/abc290_b
 
 N, K = [int(x) for x in input().split()]
 S = input()
